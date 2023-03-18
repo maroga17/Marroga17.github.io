@@ -86,7 +86,18 @@ function pintarBarra(id_barra, cantidad, indice, interval){
         clearInterval(interval)
     }
 }
-
+const nombre = document.getElementById("name");
+const email = document.getElementById("mail");
+const form = document.getElementById("form");
+function ValidateEmail(mail) 
+{
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("Ingresaste una dirección no válida!")
+    return (false);
+}
 
 window.onscroll = function(){
     efectoHabilidades();
